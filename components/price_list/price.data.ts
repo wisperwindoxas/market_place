@@ -1,27 +1,6 @@
 import { IPrice, IPriceTabs, IPriceColumns } from "./price.type";
 
-export const tabs:IPriceTabs[] = [
-  {
-    id: 1,
-    label: "Активные прайс-листы",
-  
-  },
-  {
-    id: 2,
-    label: "Проверка и загрузка",
-   
-  },
-  {
-    id: 3,
-    label: "Сообщения и ошибки",
-    
-  },
-  {
-    id: 4,
-    label: "API",
-   
-  }
-];
+
 
 export const columns:IPriceColumns[] = [
   {
@@ -45,7 +24,7 @@ export const columns:IPriceColumns[] = [
     label: "Комментарии модератора",
   },
   {
-    id: 5,
+    id: 6,
     label: "Действа",
   }
   
