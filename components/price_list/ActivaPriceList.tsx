@@ -16,7 +16,7 @@ const ActivaPriceList: FC = () => {
         {rows.map((row) =>
 
           <TableRow key={row.date_published} className='hover:bg-slate-300 cursor-pointer transition-background'>
-            <TableCell className='p-4 text-[#5946D7]'>{row.idProduct}</TableCell>
+            <TableCell className='p-4 text-[#5946D7] '>{row.idProduct}</TableCell>
             <TableCell className='p-4 flex items-center text-[#BD7E20]'> {row.upload_date}</TableCell>
             <TableCell className='p-4'>{row.date_published}</TableCell>
             <TableCell className='p-4'>{row.status}</TableCell>
