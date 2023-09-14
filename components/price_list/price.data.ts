@@ -1,4 +1,4 @@
-import { IPrice, IPriceTabs, IPriceColumns } from "./price.type";
+import { IPrice, IPriceTabs, IPriceColumns, IPriceError } from "./price.type";
 
 
 
@@ -30,6 +30,30 @@ export const columns:IPriceColumns[] = [
   
 ];
 
+export const columnsError:IPriceColumns[] = [
+  {
+    id: 1,
+    label: "Дата загрузки",
+  },
+  {
+    id: 2,
+    label: "Имя файла",
+  },
+  {
+    id: 3,
+    label: "Статус",
+  },
+  {
+    id: 4,
+    label: "Описание статуса",
+  },
+  {
+    id: 5,
+    label: "Скачать отчет",
+  }
+ 
+  
+];
 
 
 export const rows:IPrice[] = [
@@ -120,6 +144,112 @@ export const rows:IPrice[] = [
     date_published:"02.05.2021",
     status:"Опубликован",
     comment:"Комментарий модератора в случае отмены",
+    button:""
+  }
+]
+
+
+export const rowsError:IPriceError[] = [
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  },
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"Error",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"Error",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"Error",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"Error",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"Error",
+    description:"Описание ошибки, описание успеха",
+    button:""
+  }
+  ,
+  {
+    upload_date:"23.05.2021",
+    nameFile:"price-list-autoparts-23/05/2021.xls",
+    status:"OK",
+    description:"Описание ошибки, описание успеха",
     button:""
   }
 ]

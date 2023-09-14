@@ -16,3 +16,12 @@ export interface IPriceColumns{
   id: number
   label:string
 }
+
+
+export interface IPriceError{
+    upload_date:string,
+    nameFile:string,
+    status:string,
+    description:string
+    button:""
+}

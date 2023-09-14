@@ -16,12 +16,12 @@ const ActivaPriceList: FC = () => {
         {rows.map((row) =>
 
           <TableRow key={row.date_published} className='hover:bg-slate-300 cursor-pointer transition-background'>
-            <TableCell className='p-4 text-[#5946D7] '>{row.idProduct}</TableCell>
-            <TableCell className='p-4 flex items-center text-[#BD7E20]'> {row.upload_date}</TableCell>
-            <TableCell className='p-4'>{row.date_published}</TableCell>
-            <TableCell className='p-4'>{row.status}</TableCell>
-            <TableCell className='p-4 flex items-center gap-1'>{row.comment}</TableCell>
-            <TableCell className='p-4'><button className='border p-3 rounded-md flex items-center'><AiOutlineClose /> Отменить</button></TableCell>
+            <TableCell className='p-2 w-[150px] text-[#5946D7] '>{row.idProduct}</TableCell>
+            <TableCell className='p-2 w-[150px] flex items-center text-[#BD7E20]'> {row.upload_date}</TableCell>
+            <TableCell className='p-2 w-[150px]'>{row.date_published}</TableCell>
+            <TableCell className='p-2 w-[150px]'>{row.status}</TableCell>
+            <TableCell className='p-2 w-[150px]  line-clamp-2'>{row.comment}</TableCell>
+            <TableCell className='p-2 w-[150px]'><button className='border p-3 rounded-md flex items-center'><AiOutlineClose /> Отменить</button></TableCell>
           </TableRow>
 
 

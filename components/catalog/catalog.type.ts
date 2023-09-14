@@ -1,7 +1,7 @@
 import { V4Options } from "uuid"
 
 export interface Irows{
-    id: V4Options
+    id: number
     numberProduct:string
     name: string
     rating: string

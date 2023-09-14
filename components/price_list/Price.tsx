@@ -1,8 +1,7 @@
 'use client'
 
 import { FC } from 'react'
-import { Tabs, Tab, Card, CardBody, Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, CardHeader } from "@nextui-org/react";
-import { rows, columns } from './price.data'
+import { Tabs, Tab} from "@nextui-org/react";
 import ActivaPriceList from './ActivaPriceList';
 import CheckAndUpload from './CheckAndUpload';
 import MessageAndErrors from './MessageAndErrors';
