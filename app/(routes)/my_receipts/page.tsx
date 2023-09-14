@@ -6,4 +6,4 @@ const MyReceipts: FC = () => {
   </div>
 }
 
-export default MyRequisites
+export default MyReceipts
