@@ -20,7 +20,7 @@ body {
 
 }
 
-.bg-tabs{
+.bg-tabs {
   background: #fff;
   border-bottom: 1px solid gray;
   padding: 10px;
@@ -30,6 +30,26 @@ body {
   background: transparent;
 }
 
-.group{
-  @apply flex items-center justify-between bg-transparent border-b-1
+.group {
+  @apply flex items-center justify-between border-b-1
+}
+
+.group th {
+  @apply bg-transparent
+}
+
+.btn-close{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cuttedText {
+  display: block;
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  @apply bg-transparent
 }

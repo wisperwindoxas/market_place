@@ -1,12 +1,14 @@
 'use client'
-import { FC } from 'react'
-import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+import { FC, useState } from 'react'
+import {Tabs, Tab, Pagination} from "@nextui-org/react";
 import ListOrder from './ListOrder';
 import ArchiveOrder from './ArchiveOrder';
 import { BsSearch } from 'react-icons/bs';
 
 
 const MyOrder: FC = () => {
+  const [activePage, setActivePage] = useState<number>()
+
   return <div className='flex flex-col gap-4'>
     <h1 className='text-2xl font-bold mb-4'>Мои заказы</h1>
     <div className='w-full flex items-center bg-white px-2 border rounded-md'>
@@ -22,6 +24,11 @@ const MyOrder: FC = () => {
   
       </Tabs>
     </div>
+      <div className=" w-full flex justify-center flex-wrap gap-4 items-center py-16">
+
+          <Pagination onChange={(page: number) => setActivePage(page)} total={10} initialPage={1} size={"lg"} />
+
+      </div>
   </div>
 }
 
