@@ -5,10 +5,11 @@ export interface IPriceColumns{
 
 
 export interface IPrice{
-  idProduct:string,
-    upload_date:string,
-    date_published:string,
+    nameShop:string,
+    city:string,
+    addres:string,
+    Phonenumber:string,
+    email:string
     status:string,
-    comment:string
-    button:""
+    action:string,
 }

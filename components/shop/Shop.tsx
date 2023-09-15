@@ -1,17 +1,22 @@
 'use client'
 
-import { FC } from 'react'
-import {FiPlus} from 'react-icons/fi'
-import {Modal,Input, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
-import UploadImage from './UploadImg';
-import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell,Tooltip,Button } from "@nextui-org/react";
-import { rows, columns } from './shop.data'
-import { AiOutlineClose } from 'react-icons/ai';
+import { Button, Input, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Switch, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, Tooltip, useDisclosure } from "@nextui-org/react"
+import { FC, useState } from 'react'
+import { BsPencil } from 'react-icons/bs'
+import { FiPlus } from 'react-icons/fi'
+import UploadImage from './UploadImg'
+import { columns, rows } from './shop.data'
 
 
 const Shop: FC = () => {
 
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
+  const [change, setChange] = useState<boolean>(false)
+
+
+  console.log(change);
+  
 
   return <div>
     <div className='w-full flex justify-between items-center py-2'>
@@ -55,25 +60,26 @@ const Shop: FC = () => {
         )}
       </TableHeader>
       <TableBody>
-        {rows.map((row) =>
+        {rows.map((row, index) =>
 
-          <TableRow key={row.date_published} className='hover:bg-slate-300 cursor-pointer transition-background'>
-            <TableCell className='p-2 w-[150px] text-[#5946D7] '>{row.idProduct}</TableCell>
-            <TableCell className='p-2 w-[150px] flex items-center text-[#BD7E20]'> {row.upload_date}</TableCell>
-            <TableCell className='p-2 w-[150px]'>{row.date_published}</TableCell>
-            <TableCell className='p-2 w-[150px]'>{row.status}</TableCell>
-            <TableCell className='p-2 w-[150px]  line-clamp-2'>
-            <Tooltip  placement={"bottom"}  content={row.comment}>
+          <TableRow key={index} className='hover:bg-slate-300 cursor-pointer transition-background'>
+            <TableCell className='p-2 w-[150px]  text-[#5946D7] '>{row.nameShop}</TableCell>
+            <TableCell className='p-2  flex items-center text-[#BD7E20]'> {row.city}</TableCell>
+            <TableCell className='p-2  text-[12px]'>{row.addres}</TableCell>
+            <TableCell className='p-2 '>{row.Phonenumber}</TableCell>
+            <TableCell className='p-2   line-clamp-2'>{row.email}</TableCell>
+            <TableCell className='p-2 '>{row.status}</TableCell>
+
+            <TableCell className='p-2  flex'>
+                <Tooltip  placement={"bottom"}  content={` изминить магазин ${row.nameShop}`}>
                   
-                  <Button className='cuttedText'>
-                    {row.comment}
+                  <Button className='flex bg-transparent justify-center items-center'>
+                    <BsPencil className="text-center"/>
                   </Button>
                 </Tooltip>
-              
-              </TableCell>
-            <TableCell className='p-2 w-[150px]'><button className='border p-3 rounded-md flex items-center'><AiOutlineClose /> Отменить</button></TableCell>
-            <TableCell className='p-2 w-[150px]'><button className='border p-3 rounded-md flex items-center'><AiOutlineClose /> Отменить</button></TableCell>
-          </TableRow>
+                <Switch isSelected={true}  defaultSelected color="success"></Switch>
+                </TableCell>
+            </TableRow>
 
 
         )}

@@ -35,12 +35,102 @@ export const columns:IPriceColumns[] = [
 
 export const rows:IPrice[] = [
   {
-    idProduct:"33208609838",
-    upload_date:"23.05.2021",
-    date_published:"02.05.2021",
-    status:"Опубликован",
-    comment:"Комментарий модератора в случае отмены",
-    button:""
+    nameShop:"Авто Фаворит",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  },
+  {
+    nameShop:"АвтоКомплекс",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Колеса Даром",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Серебряный саквояж",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Авто Фаворит",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"FIT SERVICE",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Регинас",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Автоград",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Автосервис Александра Беляева",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
+  }
+  ,
+  {
+    nameShop:"Оптима Авто",
+    city:"Санкт-Петербург",
+    addres:"ул. Комсомольская, 178",
+    Phonenumber:"+7 (495) 58-29-04",
+    email:"client@auto-favorit.ru",
+    status:"Активен",
+    action:"",
   }
 
 ]
