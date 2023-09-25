@@ -6,6 +6,7 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Pagina
 
 import { rows, columns } from './catalog.data'
 import Image from 'next/image';
+import CategoriesNameText from '../utils/CategoriesNameText';
 
 
 
@@ -18,7 +19,8 @@ const Catalog: FC = () => {
 
 
   return <div >
-    <h1 className='text-2xl font-bold mb-4'>Мой каталог</h1>
+    <CategoriesNameText value='Мой каталог'/>
+   
     <div className='w-[350px] flex items-center bg-white px-2 border rounded-md'>
       <input type="text" placeholder='Поиск по запчастям' className='p-3 w-full border-none outline-none' />
       <BsSearch className="text-gray-600 font-bold text-2xl cursor-pointer" />

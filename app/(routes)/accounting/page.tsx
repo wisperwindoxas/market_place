@@ -1,7 +1,10 @@
+import Accounting from '@/components/accounting/Accounting'
 import { FC } from 'react'
 
-const page: FC = () => {
-  return <div>page</div>
+const MyAccounting: FC = () => {
+  return <div>
+    <Accounting/>
+  </div>
 }
 
-export default page
+export default MyAccounting

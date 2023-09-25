@@ -13,3 +13,4 @@ export interface IPrice{
     status:string,
     action:string,
 }
+

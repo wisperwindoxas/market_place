@@ -1,5 +1,5 @@
 import React from "react";
-import ImageUploading, { ImageListType } from "react-images-uploading";
+import ImageUploading, { type ImageListType } from "react-images-uploading";
 import { RxUpdate } from 'react-icons/rx'
 import { BsFillTrashFill } from 'react-icons/bs'
 import { GrImage } from 'react-icons/gr'
@@ -15,6 +15,8 @@ export default function UploadImage() {
     // data for submit
     setImages(imageList as never[]);
   };
+
+  console.log(images)
 
 
 

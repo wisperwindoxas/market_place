@@ -6,11 +6,13 @@ import ActivaPriceList from './ActivaPriceList';
 import CheckAndUpload from './CheckAndUpload';
 import MessageAndErrors from './MessageAndErrors';
 import Api from './Api';
+import CategoriesNameText from '../utils/CategoriesNameText';
 
 
 const Price: FC = () => {
   return <div>
-    <h1 className='text-2xl font-bold mb-4'>Мои прайс-листы</h1>
+    <CategoriesNameText value='Мои прайс-листы'/>
+
     <div className="flex w-full flex-col">
       <Tabs aria-label="Options" className='bg-tabs'>
         

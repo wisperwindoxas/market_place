@@ -6,6 +6,8 @@ import { BsPencil } from 'react-icons/bs'
 import { FiPlus } from 'react-icons/fi'
 import UploadImage from './UploadImg'
 import { columns, rows } from './shop.data'
+import { IPrice } from "./shop.type"
+import CategoriesNameText from "../utils/CategoriesNameText"
 
 
 const Shop: FC = () => {
@@ -13,14 +15,14 @@ const Shop: FC = () => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   const [change, setChange] = useState<boolean>(false)
+  const [isEdit, setisEdit] = useState<IPrice>()
 
 
-  console.log(change);
-  
 
   return <div>
     <div className='w-full flex justify-between items-center py-2'>
-      <h1 className='text-2xl font-bold mb-4'> Мои магазины</h1>
+      <CategoriesNameText value="Мои магазины"/>
+
       <Button  className='p-4 rounded-md flex justify-center items-center  gap-2' color={"primary"} onPress={onOpen} > <FiPlus/> Добавить магазин</Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
@@ -41,7 +43,7 @@ const Shop: FC = () => {
               </ModalBody>
               <ModalFooter>
 
-                <Button className="btn-close w-full mt-4  " color="primary" onPress={onClose}>
+                <Button className="btn-close w-full mt-4" color="primary" onPress={onClose}>
                      Добавить магазин
                 </Button>
               </ModalFooter>
@@ -70,10 +72,10 @@ const Shop: FC = () => {
             <TableCell className='p-2   line-clamp-2'>{row.email}</TableCell>
             <TableCell className='p-2 '>{row.status}</TableCell>
 
-            <TableCell className='p-2  flex'>
+            <TableCell className='p-2  flex'  >
                 <Tooltip  placement={"bottom"}  content={` изминить магазин ${row.nameShop}`}>
                   
-                  <Button className='flex bg-transparent justify-center items-center'>
+                  <Button onClick={() => setisEdit(row)} onPress={onOpen} className='flex bg-transparent justify-center items-center'>
                     <BsPencil className="text-center"/>
                   </Button>
                 </Tooltip>
@@ -81,10 +83,21 @@ const Shop: FC = () => {
                 </TableCell>
             </TableRow>
 
-
+         
         )}
+
+    
+
       </TableBody>
+
+
     </Table>
+
+
+      
+      
+    
+    
   </div>
 }
 

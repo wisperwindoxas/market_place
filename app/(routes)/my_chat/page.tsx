@@ -1,7 +1,10 @@
+import Chat from '@/components/my_chat/Chat'
 import { FC } from 'react'
 
-const page: FC = () => {
-  return <div>page</div>
+const MyChat: FC = () => {
+  return <div>
+    <Chat/>
+  </div>
 }
 
-export default page
+export default MyChat
